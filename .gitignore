@@ -78,3 +78,9 @@ dist/
 
 # Video
 *.mp4
+
+# Images
+*.jpeg
+*.jpg
+*.gif
+*.png
