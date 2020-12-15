@@ -7,21 +7,25 @@
     <link rel="stylesheet" href="../src/assets/styles/styles.css" />
   </head>
   <body>
-    <div id="app">
-      <header>
-        <h1>PlatziMediaPlayer</h1>
-        <p>An extensible media player.</p>
+    <div class="media-player" id="app">
+      <header class="media-player__header">
+        <h1 class="media-player__header--title">MediaPlayer</h1>
+        <p class="media-player__header--text">An extensible media player.</p>
       </header>
 
-      <main class="container">
-        <video class="movie">
+      <main class="media-player__container">
+        <video class="media-player__container--movie">
           <source
-            src="http://distribution.bbb3d.renderfarming.net/video/mp4/bbb_sunflower_1080p_60fps_normal.mp4"
+            src="https://ia800201.us.archive.org/12/items/BigBuckBunny_328/BigBuckBunny_512kb.mp4"
           />
         </video>
 
-        <button id="playButton">Play/Pause</button>
-        <button id="muteButton">Mute/Unmute</button>
+        <button class="media-player__container--button" id="playButton">
+          Play/Pause
+        </button>
+        <button class="media-player__container--button" id="muteButton">
+          Mute/Unmute
+        </button>
       </main>
     </div>
   </body>
