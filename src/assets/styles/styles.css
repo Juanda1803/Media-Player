@@ -41,7 +41,30 @@ main {
 .media-player__container--button {
   position: relative;
   height: 40px;
-  top: -60px;
-  left: 20px;
+  width: 40px;
+  top: -50px;
+  left: 5px;
   cursor: pointer;
+  border: 0;
+  margin-right: 10px;
+  border-radius: 999px;
+  background-color: transparent;
+  outline: none;
+}
+.media-player__container--button:hover {
+  background-color: #7c7c8194;
+}
+
+.media-player__container--button > i {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+}
+
+.media-player__container--button > i > img {
+  width: 30px;
+  height: 30px;
 }

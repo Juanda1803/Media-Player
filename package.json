@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
-    "dev": "webpack-dev-server --open --mode development",
-    "lint": "standard --fix"
+    "lint": "standard --fix",
+    "dev": "parcel index.html"
   },
   "keywords": [],
   "author": "",
@@ -24,9 +24,14 @@
     "html-loader": "^1.3.0",
     "html-webpack-plugin": "^4.4.1",
     "mini-css-extract-plugin": "^0.11.0",
+    "parcel-bundler": "^1.12.4",
     "standard": "^14.3.4",
+    "typescript": "^4.1.3",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
-  }
+  },
+  "browserslist": [
+    "defaults"
+  ]
 }
