@@ -1,6 +1,6 @@
-import MediaPlayer from "./MediaPlayer.ts";
-import AutoPlay from "./plugins/AutoPlay.ts";
-import AutoPause from "./plugins/AutoPause.ts";
+import MediaPlayer from "./MediaPlayer";
+import AutoPlay from "./plugins/AutoPlay";
+import AutoPause from "./plugins/AutoPause";
 
 const iconPlay = document.querySelector("#iconPlay");
 const iconPause = document.querySelector("#iconPause");
@@ -8,9 +8,9 @@ const iconMute = document.querySelector("#iconMute");
 const iconUnmute = document.querySelector("#iconUnmute");
 
 const video = document.querySelector("video"); // Target Video
-const imgButton = document.querySelector("#imgButton"); // Button Play / Pause
-const playButton = document.querySelector("#playButton"); // Button Play / Pause
-const muteButton = document.querySelector("#muteButton"); // Button Mute / Unmute
+const imgButton: HTMLElement = document.querySelector("#imgButton"); // Button Play / Pause
+const playButton: HTMLElement = document.querySelector("#playButton"); // Button Play / Pause
+const muteButton: HTMLElement = document.querySelector("#muteButton"); // Button Mute / Unmute
 
 // Intance class MediaPlayer
 const player = new MediaPlayer({
@@ -30,7 +30,6 @@ muteButton.onclick = () => {
   }
 };
 
-console.log(navigator.serviceWorker);
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("/sw.js").catch((error) => {
     console.log(error.message);
